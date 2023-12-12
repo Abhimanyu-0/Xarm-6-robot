@@ -1,2 +1,4 @@
 Source: https://www.dwbowen.com/plant-machete
-yet to do inverse kinematics and visualization
+Position inverse kinematics done. 
+Will upload complete inverse kinematics, visualization, and workspace code today 
+
