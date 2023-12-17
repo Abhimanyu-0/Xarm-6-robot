@@ -141,7 +141,7 @@ class Robot:
         pos5 = p6 - zs[3][:3] #p6 - p4
         pos6 = p6 - zs[4][:3] #  p6 -p5
         
-        z0 = np.array([0,0,0]).transpose()
+        z0 = np.array([0,0,1]).transpose()
         entry1 = np.cross(z0,p6)
         entry2 = np.cross(zs[0][:3],pos2)
         entry3 = np.cross(zs[1][:3],pos3)
