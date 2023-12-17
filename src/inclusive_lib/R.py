@@ -8,6 +8,7 @@ import scip
 class Robot:
     
     def __init__(self, theta1,theta2,theta3,theta4,theta5,theta6):
+        # Initialize the robot with joint angles
         self.theta1 = theta1
         self.theta2 = theta2
         self.theta3 = theta3
@@ -69,6 +70,7 @@ class Robot:
     
         
     def _jointpos(self):
+        # Compute joint positions in frames 0, 1, 2, 3, 4
         T1 = self._0T1
         T2 = self._1T2
         T3 = self._2T3
@@ -83,6 +85,7 @@ class Robot:
         return T1()[:,3] ,op1[:,3], op2[:,3], op3[:,3], op4[:,3]
     
     def _jointsvec(self):
+        # Compute joint vectors for frames 0, 1, 2, 3, 4, 5
         T1 = self._0T1
         T2 = self._1T2
         T3 = self._2T3
@@ -97,6 +100,7 @@ class Robot:
         return T1()[:,2], op1[:,2], op2[:,2], op3[:,2], op4[:,2], op5[:,2]
         
     def _endeff(self):
+         # Compute end effector transformation matrix in frame 0
         T1 = self._0T1
         T2 = self._1T2
         T3 = self._2T3
@@ -112,6 +116,7 @@ class Robot:
         return op5
     
     def _ori(self):
+        # Compute orientation angles for end-effector angles
         T1 = self._0T1
         T2 = self._1T2
         T3 = self._2T3
@@ -130,11 +135,10 @@ class Robot:
         return np.array([theta_x, theta_y, theta_z]) 
     
     def _Jacobian(self):
-       # Have to do p6-p0
-        #p6-p1, so on and so forth 
+        # Compute the Jacobian matrix for the robot
         zs =  Robot._jointsvec(self)
         end_effector_position = Robot._endeff(self)
-        p6 = end_effector_position[:,3][:3] 
+        p6 = end_effector_position[:,3][:3] #p6-p0
         pos2 = p6 - zs[0][:3] #p6 - p1
         pos3 = p6- zs[1][:3] #p6 - p2
         pos4 = p6 - zs[2][:3]#p6 - p3
@@ -171,7 +175,7 @@ class Robot:
         
         return J 
         
-        
+    """    
     def _Firstori(self):
         T1 = self._0T1
         T2 = self._1T2
@@ -190,3 +194,4 @@ class Robot:
         
         return theta_x, theta_y, theta_z , op2
     y
+"""
