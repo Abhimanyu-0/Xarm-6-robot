@@ -5,7 +5,7 @@ Source: https://www.dwbowen.com/plant-machete
 
 ## Clone the repository 
 ```python
-git clone git clone https://github.com/Abhimanyu-0/Foundations_of_Robotics_project.git
+git clone https://github.com/Abhimanyu-0/Foundations_of_Robotics_project.git
 ```
 
 
