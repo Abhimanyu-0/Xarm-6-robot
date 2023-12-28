@@ -8,8 +8,6 @@ clone the following repo:
 
 '''python
 Hello
-
-
 '''
 
 
