@@ -5,9 +5,7 @@ Source: https://www.dwbowen.com/plant-machete
 
 ## Visualization
 clone the following repo:
-
 ```python
-def hello_world():
-print("Hello, World!")
+git clone https://github.com/bulletphysics/bullet3/tree/master
 ```
 
