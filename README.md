@@ -2,6 +2,7 @@
 # Robotics_project
 
 Source: https://www.dwbowen.com/plant-machete
+Based on the Xarm6 robot
 
 
 
