@@ -25,6 +25,7 @@ The Newton-Raphson algorithm is implemented for solving inverse kinematics. The 
 ### 3. Visualization
 The code leverages the Pybullet library for visualization, allowing users to observe the robot's motion and configuration in a simulated environment. The visualization component enhances the understanding of the robot's behavior and aids in debugging.
 
+
 ### 4. Inverse Kinematics with Jacobian
 An additional feature incorporates the Jacobian matrix into the inverse kinematics solution. This enhancement improves the convergence speed and accuracy of joint angle adjustments.
 
