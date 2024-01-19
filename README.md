@@ -44,6 +44,6 @@ git clone https://github.com/bulletphysics/bullet3/tree/master
 
 
 ## References:
-5.1 MODERN ROBOTICS MECHANICS, PLANNING, AND CONTROL
+5.1 MODERN ROBOTICS MECHANICS, PLANNING, AND CONTROL.
 5.2 Numerical Methods for Inverse Kinematics by Niels Joubert, UC Berkeley, CS184
 
